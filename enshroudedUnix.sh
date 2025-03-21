@@ -45,6 +45,6 @@ services:
       - SERVER_PASSWORD=secret
       - UPDATE_CRON=*/30 * * * *
       - PUID=4711
-      - PGID=4711'
+      - PGID=4711" >> docker-compose.yml'
 echo "@reboot root (cd /usr/games/serverconfig/ && docker-compose up)" > /etc/cron.d/awsgameserver
 sudo docker-compose up
